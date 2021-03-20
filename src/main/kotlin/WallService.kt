@@ -18,27 +18,27 @@ object WallService {
             if (post.id == editedPost.id) {
                 // Редактируем
                 posts[index] = post.copy(
-                    owner_id = editedPost.owner_id,
-                    created_by = editedPost.created_by,
+                    ownerId = editedPost.ownerId,
+                    createdBy = editedPost.createdBy,
                     text = editedPost.text,
-                    reply_owner_id = editedPost.reply_owner_id,
-                    reply_post_id = editedPost.reply_post_id,
-                    friends_only = editedPost.friends_only,
+                    replyOwnerId = editedPost.replyOwnerId,
+                    replyPostId = editedPost.replyPostId,
+                    friendsOnly = editedPost.friendsOnly,
                     comments = editedPost.comments,
                     copyright = editedPost.copyright,
                     likes = editedPost.likes,
                     reposts = editedPost.reposts,
                     views = editedPost.views,
-                    post_type = editedPost.post_type,
-                    signer_id = editedPost.signer_id,
-                    can_pin = editedPost.can_pin,
-                    can_delete = editedPost.can_delete,
-                    can_edit = editedPost.can_edit,
-                    is_pinned = editedPost.is_pinned,
-                    marked_as_ads = editedPost.marked_as_ads,
-                    is_favorite = editedPost.is_favorite,
+                    postType = editedPost.postType,
+                    signerId = editedPost.signerId,
+                    canPin = editedPost.canPin,
+                    canDelete = editedPost.canDelete,
+                    canEdit = editedPost.canEdit,
+                    isPinned = editedPost.isPinned,
+                    markedAsAds = editedPost.markedAsAds,
+                    isFavorite = editedPost.isFavorite,
                     donut = editedPost.donut,
-                    postponed_id = editedPost.postponed_id
+                    postponedId = editedPost.postponedId
                 )
                 return true;
             }
